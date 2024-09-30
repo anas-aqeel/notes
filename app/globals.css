@@ -25,3 +25,14 @@ body {
     text-wrap: balance;
   }
 }
+
+.active-route {
+  background-color: #fbbf24;
+  color: #11101d;
+}
+.sidebar li:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
