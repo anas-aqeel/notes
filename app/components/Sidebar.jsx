@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { AlignJustify, Thermometer, Flame, Atom, Zap, FlaskConical, Activity, Beaker } from 'lucide-react';
+import { AlignJustify, Thermometer, Flame, Atom, Zap, FlaskConical, Activity, Beaker, Lightbulb, BookOpen } from 'lucide-react';
 
 const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
     let pathname = usePathname()
@@ -16,6 +16,8 @@ const Sidebar = ({ sidebarOpen, toggleSidebar }) => {
         { href: '/lecture-5', text: 'Lecture 5: Energy', icon: Zap, tooltip: 'Energy in Thermodynamics' },
         { href: '/lecture-6', text: 'Lecture 6: Advanced Thermodynamics', icon: Activity, tooltip: 'Advanced Concepts in Thermodynamics' },
         { href: '/lecture-7', text: 'Lecture 7: Processes & Heat Capacity', icon: Beaker, tooltip: 'Thermodynamic Processes and Heat Capacity' },
+        { href: '/lecture-8', text: 'Lecture 8: Advanced Concepts', icon: Lightbulb, tooltip: 'Advanced Thermodynamics Concepts' },
+        { href: '/chapter-1-summary', text: 'Chapter 1 Summary', icon: BookOpen, tooltip: 'Summary of Chapter 1' },
     ];
 
     return (
